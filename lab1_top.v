@@ -1,6 +1,9 @@
 /*
-Name: Victor Sira
+Name: Victor Sira, 21278163
 LAB1
+
+This is the code including the inferred latch bug
+
 */
 
 module lab1_top ( 
@@ -32,6 +35,8 @@ module lab1_top (
 			2'b01: result = ADDed_result;
 			2'b10: result = ANDed_result;
 			2'b11: result = ADDed_result; 	//Right pushbutton takes precedence
+			//INSERT THIS CODE TO FIX THE LATCH
+			//default: result = '4'b0;
 		endcase
 	end
 	
